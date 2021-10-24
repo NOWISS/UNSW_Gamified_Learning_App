@@ -10,7 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNSWGamifiedLearningApp">
         <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizzesActivity"
+            android:parentActivityName=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotesActivity"
+            android:parentActivityName=".HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".LearnActivity"
+            android:parentActivityName=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"

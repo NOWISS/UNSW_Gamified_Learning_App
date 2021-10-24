@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCEDDE"
-    tools:context=".HomeActivity">
+    tools:context=".NotesActivity">
 
     <android.widget.Button
         android:id="@+id/btnLearn"
@@ -29,7 +29,7 @@
         android:text="Notes"
         android:textSize="12sp"
         android:textColor="#FFFFFF"
-        android:background="@drawable/navigation_buttons"
+        android:background="@drawable/highlighted_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnLearn" />
 
@@ -58,4 +58,5 @@
         android:background="@drawable/navigation_buttons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnQuizzes" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

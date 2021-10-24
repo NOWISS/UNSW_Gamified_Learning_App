@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCEDDE"
     tools:context=".LearnActivity">
 
     <android.widget.Button
-        android:id="@+id/btnLearn1"
+        android:id="@+id/btnLearn"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_menu_book_24"
@@ -20,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <android.widget.Button
-        android:id="@+id/btnNotes1"
+        android:id="@+id/btnNotes"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_notes_24"
@@ -30,10 +31,10 @@
         android:textColor="#FFFFFF"
         android:background="@drawable/navigation_buttons"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnLearn1" />
+        app:layout_constraintStart_toEndOf="@+id/btnLearn" />
 
     <android.widget.Button
-        android:id="@+id/btnQuizzes1"
+        android:id="@+id/btnQuizzes"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_edit_note_24"
@@ -43,10 +44,10 @@
         android:textColor="#FFFFFF"
         android:background="@drawable/navigation_buttons"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnNotes1" />
+        app:layout_constraintStart_toEndOf="@+id/btnNotes" />
 
     <android.widget.Button
-        android:id="@+id/btnProfile1"
+        android:id="@+id/btnProfile"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_person_24"
@@ -56,16 +57,6 @@
         android:textColor="#FFFFFF"
         android:background="@drawable/navigation_buttons"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnQuizzes1" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_home_48_black" />
+        app:layout_constraintStart_toEndOf="@+id/btnQuizzes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

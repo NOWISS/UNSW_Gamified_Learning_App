@@ -7,29 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class HomeActivity extends AppCompatActivity {
-    private Button btnLearn, btnNotes, btnQuizzes, btnProfile;
+public class NotesActivity extends AppCompatActivity {
+    private Button btnLearn, btnQuizzes, btnProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-        getSupportActionBar().setTitle("Home");
+        setContentView(R.layout.activity_notes);
+        getSupportActionBar().setTitle("Notes");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnLearn = (Button) findViewById(R.id.btnLearn);
         btnLearn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, LearnActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnNotes = (Button) findViewById(R.id.btnNotes);
-        btnNotes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, NotesActivity.class);
+                Intent intent = new Intent(NotesActivity.this, LearnActivity.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         btnQuizzes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, QuizzesActivity.class);
+                Intent intent = new Intent(NotesActivity.this, QuizzesActivity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(NotesActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });

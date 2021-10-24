@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCEDDE"
-    tools:context=".HomeActivity">
+    tools:context=".ProfileActivity">
 
     <android.widget.Button
-        android:id="@+id/btnLearn"
+        android:id="@+id/btnLearn4"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_menu_book_24"
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <android.widget.Button
-        android:id="@+id/btnNotes"
+        android:id="@+id/btnNotes4"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_notes_24"
@@ -31,10 +31,10 @@
         android:textColor="#FFFFFF"
         android:background="@drawable/navigation_buttons"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnLearn" />
+        app:layout_constraintStart_toEndOf="@+id/btnLearn4" />
 
     <android.widget.Button
-        android:id="@+id/btnQuizzes"
+        android:id="@+id/btnQuizzes4"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_edit_note_24"
@@ -44,10 +44,10 @@
         android:textColor="#FFFFFF"
         android:background="@drawable/navigation_buttons"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnNotes" />
+        app:layout_constraintStart_toEndOf="@+id/btnNotes4" />
 
     <android.widget.Button
-        android:id="@+id/btnProfile"
+        android:id="@+id/btnProfile4"
         android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/ic_baseline_person_24"
@@ -55,7 +55,8 @@
         android:text="Profile"
         android:textSize="12sp"
         android:textColor="#FFFFFF"
-        android:background="@drawable/navigation_buttons"
+        android:background="@drawable/highlighted_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnQuizzes" />
+        app:layout_constraintStart_toEndOf="@+id/btnQuizzes4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
