@@ -14,8 +14,8 @@ public class QuizzesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizzes);
-        getSupportActionBar().setTitle("Quizzes");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setTitle("Quizzes");
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnLearn3 = (Button) findViewById(R.id.btnLearn3);
         btnLearn3.setOnClickListener(new View.OnClickListener() {

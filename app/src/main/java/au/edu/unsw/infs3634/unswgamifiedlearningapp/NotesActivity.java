@@ -14,8 +14,8 @@ public class NotesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notes);
-        getSupportActionBar().setTitle("Notes");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setTitle("Notes");
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnLearn = (Button) findViewById(R.id.btnLearn);
         btnLearn.setOnClickListener(new View.OnClickListener() {

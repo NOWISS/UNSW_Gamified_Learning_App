@@ -14,8 +14,8 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        getSupportActionBar().setTitle("Profile");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setTitle("Profile");
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         btnLearn4 = (Button) findViewById(R.id.btnLearn4);
         btnLearn4.setOnClickListener(new View.OnClickListener() {

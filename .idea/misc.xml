@@ -13,6 +13,28 @@
         <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_notes.xml" value="0.2694746376811594" />
         <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_profile.xml" value="0.2694746376811594" />
         <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_quizzes.xml" value="0.2694746376811594" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/highlighted_button.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_edit_note_24.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_48_black.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/ic_baseline_notes_24.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.31145833333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/login_button.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/drawable/navigation_buttons.xml" value="0.2557291666666667" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2818364990604481" />
+        <entry key="app/src/main/res/layout/activity_learn.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_notes.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_quizzes.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_topic_detail.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/fragment_de.xml" value="0.12552083333333333" />
+        <entry key="app/src/main/res/layout/popup.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/topic_list.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/topicdetail.xml" value="0.2953125" />
       </map>
     </option>
   </component>

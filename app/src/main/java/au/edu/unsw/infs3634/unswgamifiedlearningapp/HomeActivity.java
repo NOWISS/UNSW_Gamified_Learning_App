@@ -14,7 +14,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        getSupportActionBar().setTitle("Home");
+        //getSupportActionBar().setTitle("Home");
 
         btnLearn = (Button) findViewById(R.id.btnLearn);
         btnLearn.setOnClickListener(new View.OnClickListener() {
