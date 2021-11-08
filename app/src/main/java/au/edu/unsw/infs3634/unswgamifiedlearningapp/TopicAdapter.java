@@ -4,20 +4,15 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.FirebaseOptions;
-
-import java.util.List;
 
 public class TopicAdapter extends FirebaseRecyclerAdapter<Topics,TopicAdapter.ViewHolder>{
 
@@ -27,6 +22,7 @@ public class TopicAdapter extends FirebaseRecyclerAdapter<Topics,TopicAdapter.Vi
      *
      * @param options
      */
+
     public TopicAdapter(@NonNull FirebaseRecyclerOptions<Topics> options) {
         super(options);
     }
@@ -38,9 +34,11 @@ public class TopicAdapter extends FirebaseRecyclerAdapter<Topics,TopicAdapter.Vi
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppCompatActivity act = (AppCompatActivity) view.getContext();
-                act.getSupportFragmentManager().beginTransaction().replace(R.id.ghost_view,new DeFragment())
-                        .addToBackStack(null).commit();
+                //AppCompatActivity act = (AppCompatActivity) view.getContext();
+                //act.getSupportFragmentManager().beginTransaction().replace(R.id.ghost_view,new DeFragment())
+                //        .addToBackStack(null).commit();
+                Intent intent = new Intent(view.getContext(), TopicDetail.class);
+                view.getContext().startActivity(intent);
             }
         });
         Glide.with(holder.img.getContext())
@@ -67,9 +65,8 @@ public class TopicAdapter extends FirebaseRecyclerAdapter<Topics,TopicAdapter.Vi
             name = itemView.findViewById(R.id.item_topic_name);
             length = itemView.findViewById(R.id.length);
             button = itemView.findViewById(R.id.button);
-
-                }
-            }
         }
+    }
+}
 
 

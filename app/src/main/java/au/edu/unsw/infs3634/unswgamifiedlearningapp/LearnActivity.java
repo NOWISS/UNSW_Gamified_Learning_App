@@ -18,8 +18,11 @@ import android.widget.ImageView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
@@ -29,7 +32,8 @@ public class LearnActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private TopicAdapter topicAdapter;
     private FirebaseRecyclerOptions<Topics> options;
-    ImageView lefticon;
+    private ImageView lefticon;
+    private DatabaseReference dr;
 
 
     @Override
@@ -50,7 +54,6 @@ public class LearnActivity extends AppCompatActivity {
         topicAdapter = new TopicAdapter(options);
         recyclerView.setAdapter(topicAdapter);
 
-
         lefticon = findViewById(R.id.back);
         // Make the return button
         lefticon.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +61,20 @@ public class LearnActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent1 = new Intent(LearnActivity.this,HomeActivity.class);
                 startActivity(intent1);
+            }
+        });
+
+        dr = FirebaseDatabase.getInstance().getReference("Topics");
+        dr.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
@@ -90,12 +107,7 @@ public class LearnActivity extends AppCompatActivity {
                 }
             });
         }
-    // Called when the user taps the Launch Detail Activity button
-    private void launchDetailActivity(String message) {
-        Intent intent = new Intent(this, TopicDetail.class);
-        intent.putExtra(TopicDetail.INTENT_MESSAGE, message);
-        startActivity(intent);
-    }
+
     //The FirebaseRecyclerAdapter uses an event listener to monitor changes to the Firebase query.
     // To begin listening for data, call the startListening() method
     @Override
