@@ -28,12 +28,11 @@ import java.util.List;
 
 public class LearnActivity extends AppCompatActivity {
     private Button btnNotes, btnQuizzes, btnProfile;
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "LearnActivity";
     private RecyclerView recyclerView;
     private TopicAdapter topicAdapter;
     private FirebaseRecyclerOptions<Topics> options;
     private ImageView lefticon;
-    private DatabaseReference dr;
 
 
     @Override
@@ -64,48 +63,6 @@ public class LearnActivity extends AppCompatActivity {
             }
         });
 
-        dr = FirebaseDatabase.getInstance().getReference("Topics");
-        dr.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-
-        btnNotes = (Button) findViewById(R.id.btnNotes);
-            btnNotes.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(LearnActivity.this, NotesActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            btnQuizzes = (Button) findViewById(R.id.btnQuizzes);
-            btnQuizzes.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(LearnActivity.this, QuizzesActivity.class);
-                    startActivity(intent);
-                }
-            });
-
-            btnProfile = (Button) findViewById(R.id.btnProfile);
-            btnProfile.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(LearnActivity.this, ProfileActivity.class);
-                    startActivity(intent);
-                }
-            });
         }
 
     //The FirebaseRecyclerAdapter uses an event listener to monitor changes to the Firebase query.

@@ -36,56 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp" />
 
-    <android.widget.Button
-        android:id="@+id/btnLearn"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/highlighted_button"
-        android:drawableTop="@drawable/ic_baseline_menu_book_24"
-        android:insetBottom="-2dp"
-        android:text="Learn"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <android.widget.Button
-        android:id="@+id/btnNotes"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_baseline_notes_24"
-        android:insetBottom="-2dp"
-        android:text="Notes"
-        android:textSize="12sp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/navigation_buttons"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnLearn" />
-
-    <android.widget.Button
-        android:id="@+id/btnQuizzes"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_baseline_edit_note_24"
-        android:insetBottom="-2dp"
-        android:text="Quizzes"
-        android:textSize="12sp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/navigation_buttons"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnNotes" />
-
-    <android.widget.Button
-        android:id="@+id/btnProfile"
-        android:layout_width="103dp"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_baseline_person_24"
-        android:insetBottom="-2dp"
-        android:text="Profile"
-        android:textSize="12sp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/navigation_buttons"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnQuizzes" />
 
 </LinearLayout>
