@@ -60,7 +60,7 @@
                 android:layout_marginTop="20sp"
                 android:layout_marginEnd="225dp"
                 android:layout_marginBottom="151dp"
-                android:text="Learning material 1"
+                android:text="Learning Material"
                 android:textSize="17sp"
                 android:textStyle="bold"></TextView>
         </RelativeLayout>
@@ -80,11 +80,11 @@
 
             <TextView
                 android:id="@+id/middletext"
-                android:layout_width="163dp"
+                android:layout_width="175dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20sp"
-                android:text="Learning material 2"
+                android:text="Related News Articles"
                 android:textAlignment="center"
                 android:textSize="17sp"
                 android:textStyle="bold" />

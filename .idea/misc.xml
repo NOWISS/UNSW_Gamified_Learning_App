@@ -13,6 +13,9 @@
         <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_notes.xml" value="0.2694746376811594" />
         <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_profile.xml" value="0.2694746376811594" />
         <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_quizzes.xml" value="0.2694746376811594" />
+        <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_topic_detail.xml" value="0.333786231884058" />
+        <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/activity_webview.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/All In One PC/StudioProjects/unsw-gamified-learning-app-group-13/app/src/main/res/layout/topic_list.xml" value="0.33" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2557291666666667" />
         <entry key="app/src/main/res/drawable/highlighted_button.xml" value="0.2557291666666667" />
         <entry key="app/src/main/res/drawable/ic_baseline_edit_note_24.xml" value="0.2557291666666667" />
@@ -31,10 +34,10 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1503623188405797" />
         <entry key="app/src/main/res/layout/activity_quizzes.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.2477355072463768" />
-        <entry key="app/src/main/res/layout/activity_topic_detail.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_topic_detail.xml" value="0.28125" />
         <entry key="app/src/main/res/layout/activity_webview.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/fragment_de.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/layout_items.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/layout_items.xml" value="0.2463768115942029" />
         <entry key="app/src/main/res/layout/news_recycler.xml" value="0.2463768115942029" />
         <entry key="app/src/main/res/layout/popup.xml" value="0.335" />
         <entry key="app/src/main/res/layout/topic_list.xml" value="0.375" />
