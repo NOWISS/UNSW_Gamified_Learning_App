@@ -14,11 +14,14 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-import java.util.ArrayList;
-
 public class TopicAdapter extends FirebaseRecyclerAdapter<Topics,TopicAdapter.ViewHolder>{
 
-    private ArrayList<Topics> top;
+    /**
+     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
+     * {@link FirebaseRecyclerOptions} for configuration options.
+     *
+     * @param options
+     */
 
     public TopicAdapter(@NonNull FirebaseRecyclerOptions<Topics> options) {
         super(options);
@@ -26,14 +29,15 @@ public class TopicAdapter extends FirebaseRecyclerAdapter<Topics,TopicAdapter.Vi
 
     @Override
     protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Topics model) {
-        //Topics topics = top.get(position);
         holder.name.setText(model.getName());
         holder.length.setText(model.getLength());
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //AppCompatActivity act = (AppCompatActivity) view.getContext();
+                //act.getSupportFragmentManager().beginTransaction().replace(R.id.ghost_view,new DeFragment())
+                //        .addToBackStack(null).commit();
                 Intent intent = new Intent(view.getContext(), TopicDetail.class);
-                intent.putExtra(TopicDetail.INTENT_MESSAGE,model.getId());
                 view.getContext().startActivity(intent);
             }
         });

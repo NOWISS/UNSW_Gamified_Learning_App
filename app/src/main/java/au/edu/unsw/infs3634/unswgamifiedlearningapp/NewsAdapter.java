@@ -37,10 +37,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull NewsAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
-            holder.author.setText("Author: "+modelClassArrayList.get(position).getAuthor());
+            holder.author.setText(modelClassArrayList.get(position).getAuthor());
             holder.main.setText(modelClassArrayList.get(position).getDescription());
-            holder.published.setText("Published at: "+modelClassArrayList.get(position).getPublishedAt());
-            holder.title.setText(modelClassArrayList.get(position).getTitle());
+            holder.published.setText(modelClassArrayList.get(position).getPublishedAt());
             Glide.with(context).load(modelClassArrayList.get(position).getUrlToImage()).into(holder.img);
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -59,10 +58,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView author, main, published,title;
+        TextView author, main, published;
         ImageView img;
         CardView cardView;
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,8 +69,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             published = itemView.findViewById(R.id.time);
             img = itemView.findViewById(R.id.news_img);
             cardView = itemView.findViewById(R.id.card);
-            title = itemView.findViewById(R.id.head);
-
         }
     }
 }
