@@ -13,48 +13,92 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="10dp"
+        >
 
-        <TextView
-            android:id="@+id/head"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="Head"
-            android:textSize="13sp" />
+            android:layout_height="match_parent"
+            android:background="@color/eggshell">
 
-        <ImageView
-            android:id="@+id/news_img"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignStart="@+id/head"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="20sp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginBottom="422dp" />
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="375dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5sp"
+                android:gravity="center"
+                android:hint="Head"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
 
-        <TextView
-            android:id="@+id/news_author"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Author" />
+            <ImageView
+                android:id="@+id/news_img"
+                android:layout_width="213dp"
+                android:layout_height="150dp"
+                android:layout_alignStart="@+id/head"
+                android:layout_alignLeft="@+id/head"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="178dp"
+                android:layout_marginBottom="101dp" />
 
-        <TextView
-            android:id="@+id/main_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="70dp"
-            android:text="Main content" />
+            <TextView
+                android:id="@+id/news_author"
+                android:layout_width="208dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/news_img"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="177dp"
+                android:layout_marginBottom="53dp"
+                android:text="Author"
+                android:textSize="10dp"/>
 
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:text="Published At" />
+            <TextView
+                android:id="@+id/main_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/news_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="245dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="23dp"
+                android:text="Main content"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="210dp"
+                android:layout_height="17dp"
+                android:layout_alignStart="@+id/news_author"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginBottom="23dp"
+                android:text="Published At"
+                android:textSize="10dp"/>
+
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

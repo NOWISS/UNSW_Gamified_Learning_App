@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+    tools:context=".Checkpoint">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkpoint Time" />
+
+
+    <ImageView
+        android:id="@+id/bigboss"
+        android:layout_width="208dp"
+        android:layout_height="191dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/boss" />
+
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Well Done! Ready for Next Adventure?"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="28sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp">
+
+        <ImageButton
+            android:id="@+id/textTitle"
+            android:layout_width="285dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgbtn"
+            android:paddingBottom="10dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.323" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="236dp"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="Continue"
+            android:textSize="24dp"
+            android:textColor="#332FA2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.214"
+            app:layout_constraintStart_toStartOf="@+id/textTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.311" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:text="Back to Home"
+            android:textColor="@color/eggshell"
+            android:textSize="17sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -3,16 +3,21 @@ package au.edu.unsw.infs3634.unswgamifiedlearningapp;
 /* This class should be created by using APIs */
 
 public class Topics {
-    String name,length,iurl;
+    String id,name,length,iurl,m1_text,m1_v;
+
+
+    public Topics(String id, String name, String length, String iurl, String m1_text, String m1_v) {
+        this.id = id;
+        this.name = name;
+        this.length = length;
+        this.iurl = iurl;
+        this.m1_text = m1_text;
+        this.m1_v = m1_v;
+    }
 
     // constructor for firebase
     Topics(){}
 
-    public Topics(String name, String length, String iurl) {
-        this.name = name;
-        this.length = length;
-        this.iurl = iurl;
-    }
 
     public String getName() {
         return name;
@@ -36,5 +41,29 @@ public class Topics {
 
     public void setIurl(String iurl) {
         this.iurl = iurl;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getM1_text() {
+        return m1_text;
+    }
+
+    public void setM1_text(String m1_text) {
+        this.m1_text = m1_text;
+    }
+
+    public String getM1_v() {
+        return m1_v;
+    }
+
+    public void setM1_v(String m1_v) {
+        this.m1_v = m1_v;
     }
 }

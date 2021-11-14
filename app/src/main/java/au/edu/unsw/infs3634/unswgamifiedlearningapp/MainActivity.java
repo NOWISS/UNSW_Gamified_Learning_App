@@ -1,12 +1,8 @@
 package au.edu.unsw.infs3634.unswgamifiedlearningapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.read.biff.BiffException;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -14,10 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,12 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private String password1 = "12345";
 
     boolean isValid = false;
-    private SqlUtils sqlUtils;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sqlUtils = SqlUtils.getInstance();
         //getSupportActionBar().setTitle("Think Green");
 
         // Idea for login screen taken from:
@@ -77,19 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-        SharedPreferences setting = getSharedPreferences("qidongcishu", 0);
-        boolean first = setting.getBoolean("FIRST", true);
-        if (first) {// 第一次则跳转到欢迎页面
-            setting.edit().putBoolean("FIRST", false).commit();
-            importSheet();
-        } else {//如果是第二次启动则直接跳转到主页面
-
-        }
-
     }
-
-
     // Idea for using textWatcher to disable button when editText is empty taken from:
     // Title: textWatcherExample source code
     // Author: Coding in Flow
@@ -120,33 +99,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
-    private void importSheet() {
-        try {
-            // 1
-            InputStream is = getResources().getAssets().open("green.xls");
-            // 2
-            Workbook book = Workbook.getWorkbook(is);
-            // 3
-            Sheet sheet = book.getSheet(0);
-            // 4
-            for (int j = 0; j < sheet.getRows(); ++j) {
-                Quesstion w = new Quesstion();
-                w.setTitle(sheet.getCell(0, j).getContents());
-                w.setAnswer(sheet.getCell(1, j).getContents());
-                w.setAnswer1(sheet.getCell(2, j).getContents());
-                w.setAnswer2(sheet.getCell(3, j).getContents());
-                w.setAnswer3(sheet.getCell(4, j).getContents());
-                w.setAnswer4(sheet.getCell(5, j).getContents());
-                w.setStatus(Integer.parseInt(sheet.getCell(6,j).getContents()));
-                //Log.e("xxxxx","-->"+sheet.getCell(0, j).getContents()+"-->"+sheet.getCell(1, j).getContents());
-                sqlUtils.getDb().save(w);
-            }
-            book.close();
-        } catch (IOException | BiffException e) {
-            e.printStackTrace();
-        }
-
-    }
-
 }

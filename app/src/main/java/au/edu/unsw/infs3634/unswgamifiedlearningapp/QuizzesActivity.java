@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class QuizzesActivity extends AppCompatActivity {
-    private Button btnLearn3, btnNotes3, btnProfile3,btnEasy,btnNormal,btnHard;
+    private Button btnLearn3, btnNotes3, btnProfile3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,36 +40,6 @@ public class QuizzesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(QuizzesActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnEasy = findViewById(R.id.btnEasy);
-        btnEasy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(QuizzesActivity.this, QuizActivity.class);
-                intent.putExtra("status",1);
-                startActivity(intent);
-            }
-        });
-
-        btnNormal = findViewById(R.id.btnNormal);
-        btnNormal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(QuizzesActivity.this, QuizActivity.class);
-                intent.putExtra("status",2);
-                startActivity(intent);
-            }
-        });
-
-        btnHard = findViewById(R.id.btnHard);
-        btnHard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(QuizzesActivity.this, QuizActivity.class);
-                intent.putExtra("status",3);
                 startActivity(intent);
             }
         });

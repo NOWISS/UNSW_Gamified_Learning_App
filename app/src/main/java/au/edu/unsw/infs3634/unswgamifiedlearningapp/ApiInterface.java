@@ -22,7 +22,7 @@ public interface ApiInterface {
     );
     @GET("top-headlines")
     Call<NewsResponse> getQ(
-            @Query("country") String country,
+            //@Query("country") String country,
             @Query("q") String query,
             @Query("pagesize") int pagesize,
             @Query("apikey") String key

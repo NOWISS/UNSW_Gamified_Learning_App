@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/app_icon" />
+        app:srcCompat="@drawable/app_icon" />
 
     <TextView
         android:id="@+id/textView2"
