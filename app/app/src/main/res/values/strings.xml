@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UNSW Gamified Learning App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api_key">563b4217c7d642139a8bf45a9fe0eae7</string>
+</resources>

@@ -1,19 +1,14 @@
 package au.edu.unsw.infs3634.unswgamifiedlearningapp;
 
 import android.content.Context;
-
-import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import androidx.annotation.Nullable;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.BaseViewHolder;
+
+import java.util.List;
 
 
 public class NotesListAdapter extends BaseQuickAdapter<Notes, BaseViewHolder> {

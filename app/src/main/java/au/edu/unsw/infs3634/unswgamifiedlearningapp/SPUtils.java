@@ -3,12 +3,12 @@ package au.edu.unsw.infs3634.unswgamifiedlearningapp;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import androidx.annotation.NonNull;
+
 import com.google.gson.Gson;
 
 import java.lang.reflect.Method;
 import java.util.Map;
-
-import androidx.annotation.NonNull;
 
 
 public class SPUtils {

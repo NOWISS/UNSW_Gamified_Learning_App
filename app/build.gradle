@@ -16,6 +16,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     buildTypes {
         release {
             minifyEnabled false
@@ -51,6 +52,10 @@ dependencies {
     implementation 'com.sasank.roundedhorizontalprogress:roundedhorizontalprogress:1.0.1'
 }
 
+
+repositories {
+    google()
+}
 repositories {
     google()
 }

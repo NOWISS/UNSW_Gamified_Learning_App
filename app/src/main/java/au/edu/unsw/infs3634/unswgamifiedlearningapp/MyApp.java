@@ -5,8 +5,6 @@ import android.content.Context;
 
 import org.xutils.x;
 
-import androidx.paging.PagingSource;
-
 public class MyApp extends Application {
     private static Context context;
     @Override

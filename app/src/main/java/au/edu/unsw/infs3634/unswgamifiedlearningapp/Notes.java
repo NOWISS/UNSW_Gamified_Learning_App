@@ -4,6 +4,7 @@ import org.xutils.db.annotation.Column;
 import org.xutils.db.annotation.Table;
 
 import java.io.Serializable;
+
 @Table(name = "note_sys")
 public class Notes implements Serializable {
     @Column(name = "id", isId = true, autoGen = true, property = "NOT NULL")

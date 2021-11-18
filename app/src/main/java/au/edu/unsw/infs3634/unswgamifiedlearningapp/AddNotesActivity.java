@@ -2,7 +2,6 @@ package au.edu.unsw.infs3634.unswgamifiedlearningapp;
 
 import android.content.Context;
 import android.os.Bundle;
-
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
@@ -10,14 +9,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.xutils.ex.DbException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 
 public class AddNotesActivity extends AppCompatActivity {
