@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     android:background="#DCEDDE"
     tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tv_wea"
+        android:text=""
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/etUsername"
@@ -64,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/app_icon" />
+        app:srcCompat="@mipmap/app_icon" />
 
     <TextView
         android:id="@+id/textView2"

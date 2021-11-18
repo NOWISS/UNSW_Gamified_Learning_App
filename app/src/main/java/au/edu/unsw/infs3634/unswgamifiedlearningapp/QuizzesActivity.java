@@ -8,38 +8,42 @@ import android.view.View;
 import android.widget.Button;
 
 public class QuizzesActivity extends AppCompatActivity {
-    private Button btnLearn3, btnNotes3, btnProfile3;
+    private Button btnLearn3, btnNotes3, btnProfile3,btnEasy,btnNormal,btnHard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizzes);
-        //getSupportActionBar().setTitle("Quizzes");
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        btnLearn3 = (Button) findViewById(R.id.btnLearn3);
-        btnLearn3.setOnClickListener(new View.OnClickListener() {
+
+
+
+        btnEasy = findViewById(R.id.btnEasy);
+        btnEasy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizzesActivity.this, LearnActivity.class);
+                Intent intent = new Intent(QuizzesActivity.this, QuizActivity.class);
+                intent.putExtra("status",1);
                 startActivity(intent);
             }
         });
 
-        btnNotes3 = (Button) findViewById(R.id.btnNotes3);
-        btnNotes3.setOnClickListener(new View.OnClickListener() {
+        btnNormal = findViewById(R.id.btnNormal);
+        btnNormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizzesActivity.this, NotesActivity.class);
+                Intent intent = new Intent(QuizzesActivity.this, QuizActivity.class);
+                intent.putExtra("status",2);
                 startActivity(intent);
             }
         });
 
-        btnProfile3 = (Button) findViewById(R.id.btnProfile3);
-        btnProfile3.setOnClickListener(new View.OnClickListener() {
+        btnHard = findViewById(R.id.btnHard);
+        btnHard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizzesActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(QuizzesActivity.this, QuizActivity.class);
+                intent.putExtra("status",3);
                 startActivity(intent);
             }
         });
