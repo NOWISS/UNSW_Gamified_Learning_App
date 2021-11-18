@@ -4,6 +4,12 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
+// Idea for this class taken from:
+// Title: How to Make a News App | REST API | Android Project
+// Author: Coding with Evan
+// Date: 1/8/2021
+// Availability: https://www.youtube.com/watch?v=Csx7ve8DF_U
+
 public interface ApiInterface {
     String base_url = "https://newsapi.org/v2/";
 

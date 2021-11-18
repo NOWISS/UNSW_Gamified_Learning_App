@@ -4,15 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mapgreen"
+    android:background="@drawable/gamebg"
     tools:context=".QuizzesActivity">
 
+    <android.widget.Button
+        android:id="@+id/gback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <android.widget.Button
+        android:id="@+id/star"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
 
     <android.widget.Button
         android:id="@+id/btnEasy"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-
         android:background="@drawable/login_button"
         android:text="Easy"
         android:textColor="#FFFFFF"
@@ -20,19 +42,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.576" />
 
     <android.widget.Button
         android:id="@+id/btnNormal"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="336dp"
         android:background="@drawable/login_button"
         android:text="Normal"
         android:textColor="#FFFFFF"
@@ -40,19 +58,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEasy"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.099" />
 
     <android.widget.Button
         android:id="@+id/btnHard"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="256dp"
         android:background="@drawable/login_button"
         android:text="Hard"
         android:textColor="#FFFFFF"
@@ -60,21 +74,20 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnNormal"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.154" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="151dp"
-        android:layout_height="135dp"
+        android:layout_width="203dp"
+        android:layout_height="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.153"
         app:srcCompat="@drawable/circle" />
 
     <ImageView
@@ -89,32 +102,20 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="368dp"
-        android:layout_height="186dp"
+        android:layout_width="354dp"
+        android:layout_height="228dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
+        app:layout_constraintVertical_bias="0.354"
         app:srcCompat="@drawable/bar" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="92dp"
-        android:layout_height="92dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="85dp"
-        android:layout_height="65dp"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

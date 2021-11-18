@@ -6,16 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class QuizzesActivity extends AppCompatActivity {
     private Button btnLearn3, btnNotes3, btnProfile3,btnEasy,btnNormal,btnHard;
+    private Button lefticon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizzes);
 
-
+        lefticon = findViewById(R.id.gback);
+        // Make the return button
+        lefticon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(QuizzesActivity.this,HomeActivity.class);
+                startActivity(intent1);
+            }
+        });
 
 
         btnEasy = findViewById(R.id.btnEasy);

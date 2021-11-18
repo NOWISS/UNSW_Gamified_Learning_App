@@ -17,6 +17,13 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
+
+// Idea for this class taken from:
+// Title: How to Make a News App | REST API | Android Project
+// Author: Coding with Evan
+// Date: 1/8/2021
+// Availability: https://www.youtube.com/watch?v=Csx7ve8DF_U
+
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
 
     Context context;

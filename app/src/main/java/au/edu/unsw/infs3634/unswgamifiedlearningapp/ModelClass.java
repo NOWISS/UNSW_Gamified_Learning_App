@@ -1,5 +1,13 @@
 package au.edu.unsw.infs3634.unswgamifiedlearningapp;
 
+//
+// Idea for this class taken from:
+// Title: News app in android studio | how to create news app in android studio | News app |Retrofit |REST API
+// Author: Tech Projects
+// Date: 18/6/2021
+// Availability: https://www.youtube.com/watch?v=O5Oy1226LX4
+
+
 public class ModelClass {
     private String author, title, description, url, urlToImage, publishedAt;
 

@@ -25,6 +25,12 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+// Idea for this class taken from:
+// Title: How to Make a News App | REST API | Android Project
+// Author: Coding with Evan
+// Date: 1/8/2021
+// Availability: https://www.youtube.com/watch?v=Csx7ve8DF_U
+
 public class TopicDetail extends AppCompatActivity {
 
     private String TAG = "TopicDetail";
@@ -53,6 +59,14 @@ public class TopicDetail extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
         String name = getIntent().getStringExtra(INTENT_MESSAGE);
         Log.d(TAG,name);
+
+
+
+// Idea for fetching data from firebase taken from:
+// Title: Firebase Android Tutorial 5 - Retrieving Data from Firebase Realtime Database
+// Author: ProgrammingKnowledge
+// Date: 6/1/2020
+// Availability: https://www.youtube.com/watch?v=XactTKR0Wfc
 
         // use data location reference to find id
         ref = FirebaseDatabase.getInstance().getReference().child("Topics");
