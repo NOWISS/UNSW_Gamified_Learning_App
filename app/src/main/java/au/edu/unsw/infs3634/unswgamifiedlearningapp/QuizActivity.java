@@ -24,6 +24,11 @@ import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
 
+	// Idea for quiz screen taken from:
+	// Title: MultipleChoiceQuiz source code
+	// Author: Victor Wooding
+	// Date: 11/12/2016
+	// Availability: https://www.youtube.com/watch?v=4g1_UH_6VQc&ab_channel=VictorWooding
 
 
 	private List<Quesstion> list;

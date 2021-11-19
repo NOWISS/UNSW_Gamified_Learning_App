@@ -20,6 +20,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NotesActivity extends AppCompatActivity {
+
+    // Idea for notes screen taken from:
+    // Title: EasyTutoNotes source code
+    // Author: Easy Tuto
+    // Date: 8/8/2021
+    // Availability: https://www.youtube.com/watch?v=or_pH92l-IQ&t=706s&ab_channel=EasyTuto
+
     private ImageView lefticon;
     private RecyclerView rcView;
     private Button tvAdd;
